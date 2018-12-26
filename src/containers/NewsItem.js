@@ -21,7 +21,6 @@ let NewsItem = ({ article }) => (
         <h1>{article.title}</h1>
         <img style={imgStyle} src={article.urlToImage} alt="" />
         <h2>{article.description}</h2>
-        <a href={article.url} target="_blank">READ MORE</a>
       </div>
     </article> :
     null
@@ -31,10 +30,7 @@ const mapStateToProps = (state) => ({
   article: state.news,
 })
 
-NewsItem = connect(
-  mapStateToProps,
-  null
-)(NewsItem)
+NewsItem = connect(mapStateToProps, null)(NewsItem)
 
 export default NewsItem;
 

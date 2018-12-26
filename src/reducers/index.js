@@ -1,9 +1,9 @@
 const reducer = (state = {}, action) => {
   switch (action.type) {
     case 'GET_NEWS':
-      return { ...state, loading: true };
+      return { ...state,  };
     case 'NEWS_RECEIVED':
-      return { ...state, news: action.json[0], loading: false }
+      return { ...state, news: action.json[0], }
     default:
       return state;
   }
