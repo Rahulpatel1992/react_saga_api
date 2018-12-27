@@ -18,6 +18,7 @@ let NewsItem = ({ article }) => (
   article ?
     <article style={articleStyle} >
       <div>
+      <h1>{article.author}</h1>
         <h1>{article.title}</h1>
         <img style={imgStyle} src={article.urlToImage} alt="" />
         <h2>{article.description}</h2>

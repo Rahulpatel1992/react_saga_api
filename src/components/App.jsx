@@ -5,7 +5,7 @@ import NewsItem from '../containers/NewsItem'
 
 let App = () => (
   <div>
-    <Button />
+     <Button />
     <NewsItem />
   </div>
 );
